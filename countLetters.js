@@ -18,5 +18,5 @@ const countLetters = function (string) {
     } else {
       results[letter] = (results[letter] || 0) + 1;
     }
-  } console.log(results);
+  } return results;
 };
