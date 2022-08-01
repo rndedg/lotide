@@ -1,6 +1,5 @@
-const eqArrays = require('../eqArrays');
 
-//Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
+const eqArrays = require('../eqArrays');
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
@@ -10,4 +9,5 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-module.exports = assertArraysEqual;
+assertArraysEqual([1, 2, 3, 4],[1, 2, 3, 4]);
+assertArraysEqual(['banana', 'apple', 'potato'], ['banana', 'apple', 'grapes']);
